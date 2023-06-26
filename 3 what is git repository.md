@@ -42,3 +42,13 @@ To add all text files of the current directory to staging area.
 
 To add all text files of a particular directory(docs) to staging area.
 > git add docs/*.txt
+
+To add text files of entire project to staging area
+> git add “*.txt”
+
+To commits the staged changes to the local repository.
+> git commit -m "Add existing file"
+
+This commit command is used to add any of the tracked files to staging area and commit them by providing a message to remember
+<br>
+<br>
