@@ -20,7 +20,19 @@ git reset HEAD YOUR_FILE
 
 - Commit the files that you’ve staged in your local repository.
 > git commit -m 'First commit'
-# Commits the tracked changes and prepares them to be pushed to a remote repository.
+// Commits the tracked changes and prepares them to be pushed to a remote repository.
   To remove this commit and modify the file, use
 git reset --soft HEAD~1
-  And commit and add the file again.
+  And commit and add the file again
+
+To set a main branch at local repository:
+>  git branch -M main
+
+to set remote to repo where u want to host ur code:
+> git remote add origin URL
+
+to push ur changes in ur local repo to GitHub:
+>  git push -u origin main
+
+You may download changes from remote repository to local repository using the command:
+>git pull
