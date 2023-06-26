@@ -14,8 +14,8 @@ Github is owned by Microsoft, provides access to public(free) and private(paid) 
 
 - A **new .git folder** is created in the directory which is by **default hidden**.
 - Add the files in your new local repository. This stages them for the first commit.
-> git add .  return
-#Adds the files in the local repository and stages them for commit. To unstage a file, use  
+> git add . <br>
+Adds the files in the local repository and stages them for commit. To unstage a file, use <br>
 git reset HEAD YOUR_FILE
 
 - Commit the files that you’ve staged in your local repository.
@@ -33,6 +33,13 @@ to set remote to repo where u want to host ur code:
 
 to push ur changes in ur local repo to GitHub:
 >  git push -u origin main
+
+### Note :
+1. **git push origin main:**
+This command pushes the commits from your local branch named "main" to the remote repository named "origin". However, without the "-u" option, it does not establish an upstream tracking relationship between your local branch and the remote branch. As a result, you will need to specify the remote branch explicitly in future push commands, like "git push origin main" each time you want to push to that branch.
+
+2. **git push -u origin main:**
+This command also pushes your local "main" branch's commits to the "origin" remote repository. However, the "-u" option has an additional effect. It establishes an *upstream tracking relationship* between your local branch and the remote branch. It means that Git remembers the association between your local "main" branch and the "origin/main" branch. After using this command, you can simply use **"git push"** without any additional arguments in the future. Git will know that you want to push to the "origin/main" branch by default
 
 You may download changes from remote repository to local repository using the command:
 >git pull
